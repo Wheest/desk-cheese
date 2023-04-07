@@ -5,7 +5,7 @@
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Desk Cheese.</h3>
+  <h3 align="center">Desk Cheese</h3>
 
   <p align="center">
     A tool to take periodic webcam photos, and filter humanless ones
@@ -20,7 +20,7 @@ I thought it would be interesting to get a timelapse of myself as I wrote my the
 It has a `bash` script (`take_photo.sh`) to take a photograph using the webcam, and saves it as a timestamped image.
 The script should be run as a `cronjob`, with an example of how to do that given in the script itself.
 
-Then, there is then a Python script that runs the [YOLOv3 object detection model](https://pjreddie.com/darknet/yolo/) on the images, to see which ones contain a person.
+Then, there is then a Python script that runs the [YOLOv3 object detection model](https://pjreddie.com/darknet/yolo/) on the images, to see which ones contain a human.
 The script saves lists of images that it thinks contains humans and those it doesn't, and caches the inference results so we don't need to repeat.
 
 The final script `create_animated_gif.sh` takes the images and turns them into an animated GIF.
