@@ -31,7 +31,7 @@ The tool is intended to run while one is working at one's desk, and "cheese" is 
 
 ## Usage
 
-As well as the Python dependencies `tqdm opencv-python numpy`, you also the `imagemagick` and `fswebcam` packages.
+As well as the Python dependencies `tqdm opencv-python numpy`, you also need the `imagemagick` and `fswebcam` packages.
 
 Edit the `take_photo.sh` script to define where you want to save the files, as well as your working hours.
 Add the script as a cronjob.
@@ -52,7 +52,7 @@ That ain't for this tool to decide.
 
 > If everything was in Python it would probably be more portable
 
-Yeah, but I asked GPT-4 to generate a couple of _a couple of GIF generation functions using `Pillow` and `imageio` and they were just hung.
+Yeah, but I asked GPT-4 to generate a couple of GIF generation functions using `Pillow` and `imageio` and they just hung.
 imagemagick does the job for me.
 
 
