@@ -7,7 +7,7 @@
 # Which will make it take a picture every 20 mins, which can be adjusted as needed
 # You will need the fswebcam package
 
-BASE_DIR="/home/pez/Pictures/thesis/pics/"
+BASE_DIR="/home/pez/Pictures/desk-cheese/pics/"
 TIME_LOWER_BOUND="08:00:00"
 TIME_UPPER_BOUND="19:00:00"
 CURRENT_DAY=$(date +%u)
