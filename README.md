@@ -23,7 +23,8 @@ The script should be run as a `cronjob`, with an example of how to do that given
 Then, there is then a Python script that runs the [YOLOv3 object detection model](https://pjreddie.com/darknet/yolo/) on the images, to see which ones contain a human.
 The script saves lists of images that it thinks contains humans and those it doesn't, and caches the inference results so we don't need to repeat.
 
-The final script `create_animated_gif.sh` takes the images and turns them into an animated GIF.
+The final script `generate_animated_gif.sh` takes the images and turns them into an animated GIF.
+Alternatively, you can run `generate_mp4.sh` to make a video, which also optionally add an audio file.
 
 > Why the name?
 
@@ -67,3 +68,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 * [YoloV3](https://pjreddie.com/darknet/yolo/)
 * [fswebcam](https://www.sanslogic.co.uk/fswebcam/)
 * [imagemagick](https://imagemagick.org/index.php)
+* [FFmpeg](https://ffmpeg.org/)

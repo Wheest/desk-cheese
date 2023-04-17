@@ -24,13 +24,13 @@ if [[ $CURRENT_DAY -ge 1 && $CURRENT_DAY -le 6 ]]; then
     TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
     FILENAME="$BASE_DIR/$TIMESTAMP.jpg"
 
-    # Take 3 photos with a 2-second delay and save the last one
-    for i in {1..3}; do
-      if [ "$i" -eq 3 ]; then
+    # Take 6 photos with a 0.05-second delay and save the last one
+    for i in {1..6}; do
+      if [ "$i" -eq 6 ]; then
         fswebcam -r 1280x720 --no-banner $FILENAME
       else
         fswebcam -r 1280x720 --no-banner - >/dev/null 2>&1
-        sleep 0.1
+        sleep 0.05
       fi
     done
   fi

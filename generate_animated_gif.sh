@@ -1,6 +1,6 @@
 #!/bin/bash
 
-input_directory="pics"
+input_directory="${1:-pics}"
 duration=50  # in milliseconds
 
 while read -r file_list; do
