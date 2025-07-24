@@ -18,6 +18,7 @@
 
 I thought it would be interesting to get a timelapse of myself as I wrote my thesis, so I wrote this tool to do just that.
 It has a `bash` script (`take_photo.sh`) to take a photograph using the webcam, and saves it as a timestamped image.
+Later, I made the script `take_photo.py`, which also supports MacOS via the [`imagesnap` tool](https://github.com/rharder/imagesnap).
 The script should be run as a `cronjob`, with an example of how to do that given in the script itself.
 
 Then, there is then a Python script that runs the [YOLOv3 object detection model](https://pjreddie.com/darknet/yolo/) on the images, to see which ones contain a human.
